@@ -55,5 +55,9 @@ if command -v midfusion >/dev/null 2>&1; then
   echo "Installed: $(midfusion --version 2>/dev/null || echo ${VERSION})"
 else
   echo "Installed to ${INSTALL_DIR}/midfusion"
-  echo "Note: ${INSTALL_DIR} may not be in your PATH"
+  echo "Add ${INSTALL_DIR} to your PATH if not already"
 fi
+
+echo ""
+echo "Usage: midfusion [command] or mf [command]"
+echo "Run 'midfusion --help' for available commands"
